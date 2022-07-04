@@ -17,6 +17,7 @@ final class PostListPresenter:PostListPresenterProtocol{
     
     var cachedTable = false
     var postArray: [Post] = []
+    var reloadingFromAPI: Bool = false
     
     // - MARK: - View's Interactions
     func viewDidLoad(){
@@ -33,6 +34,7 @@ final class PostListPresenter:PostListPresenterProtocol{
     }
     
     func loadFromAPI(){
+        reloadingFromAPI = true
         view.showLoading()
         print("Loading from API")
         interactor.reloadFromAPI()
@@ -54,10 +56,6 @@ final class PostListPresenter:PostListPresenterProtocol{
     
     func getPostIn(row: Int) -> Post {
         return postArray[row]
-    }
-    
-    func hasCache() -> Bool {
-        return cachedTable
     }
     
     func deleteAllPosts() {
@@ -82,9 +80,14 @@ extension PostListPresenter:PostListInteractorOutputProtocol{
             interactor.uploadAllPosts(posts: postArray)
         }
         print("\(model.count) entries loaded.")
-        self.view.hideLoading()
-        self.view.reload()
         
+        if reloadingFromAPI{
+            reloadingFromAPI = false
+            interactor.getAllCDPosts()
+        }else{
+            self.view.hideLoading()
+            self.view.reload()
+        }
     }
     
     func successDelete() {

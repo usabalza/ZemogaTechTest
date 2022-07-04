@@ -25,7 +25,6 @@ protocol PostListPresenterProtocol:ViperPresenter{
     func viewDidLoad()
     func loadFromCoreData()
     func loadFromAPI()
-    func hasCache() -> Bool
     func loadContent()
     func getPostCount() -> Int
     func getPostIn(row: Int) -> Post

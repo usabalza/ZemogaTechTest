@@ -19,7 +19,6 @@ final class PostDetailPresenter:PostDetailPresenterProtocol{
     var selectedPost: Post?
     var postUser: User?
     var commentArray: [Comment] = []
-    private let manager = CoreDataManager()
     
     // - MARK: - View's Interactions
     func viewDidLoad(){

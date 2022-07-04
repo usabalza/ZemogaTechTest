@@ -135,7 +135,6 @@ extension PostListView: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PostCell.identifier, for: indexPath) as! PostCell
         cell.setupFromAPI(model: presenter.getPostIn(row: indexPath.row))
-        
         return cell
     }
     
