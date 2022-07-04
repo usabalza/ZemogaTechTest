@@ -12,12 +12,7 @@ import UIKit
 final class  PostDetailRouter:ViperRouterUIKit,PostDetailRouterProtocol{
     ///Routes to other viper modules defined in `PostDetailRoutes`
     func route(to r: PostDetailRoutes) {
-        go { (current) -> (UIViewController) in
-            switch r{
-            default:
-                return UIViewController()
-            }
-        }
+        
     }
     
     deinit {
