@@ -7,16 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32F5562502A36F166CDA08E9 /* Pods_ZemogaTechTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833F177A24932616CBE96A65 /* Pods_ZemogaTechTest.framework */; };
+		8CCB3AA4FB3A26D87C1A0EBA /* Pods_ZemogaTechTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6359AFB24AE63CB8B767CD /* Pods_ZemogaTechTestTests.framework */; };
 		FAA9AB17286DDDE5001C3A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB16286DDDE5001C3A37 /* AppDelegate.swift */; };
-		FAA9AB19286DDDE5001C3A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB18286DDDE5001C3A37 /* SceneDelegate.swift */; };
-		FAA9AB1B286DDDE5001C3A37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB1A286DDDE5001C3A37 /* ViewController.swift */; };
-		FAA9AB1E286DDDE5001C3A37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB1C286DDDE5001C3A37 /* Main.storyboard */; };
 		FAA9AB21286DDDE5001C3A37 /* ZemogaTechTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB1F286DDDE5001C3A37 /* ZemogaTechTest.xcdatamodeld */; };
 		FAA9AB23286DDDE7001C3A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB22286DDDE7001C3A37 /* Assets.xcassets */; };
 		FAA9AB26286DDDE7001C3A37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB24286DDDE7001C3A37 /* LaunchScreen.storyboard */; };
 		FAA9AB31286DDDE8001C3A37 /* ZemogaTechTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB30286DDDE8001C3A37 /* ZemogaTechTestTests.swift */; };
 		FAA9AB3B286DDDE8001C3A37 /* ZemogaTechTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB3A286DDDE8001C3A37 /* ZemogaTechTestUITests.swift */; };
 		FAA9AB3D286DDDE8001C3A37 /* ZemogaTechTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB3C286DDDE8001C3A37 /* ZemogaTechTestUITestsLaunchTests.swift */; };
+		FAA9AB52286DE1B1001C3A37 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB4B286DE1B1001C3A37 /* PostListView.swift */; };
+		FAA9AB53286DE1B1001C3A37 /* PostListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB4C286DE1B1001C3A37 /* PostListBuilder.swift */; };
+		FAA9AB54286DE1B1001C3A37 /* PostListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB4D286DE1B1001C3A37 /* PostListRouter.swift */; };
+		FAA9AB55286DE1B1001C3A37 /* PostListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB4E286DE1B1001C3A37 /* PostListView.xib */; };
+		FAA9AB56286DE1B1001C3A37 /* PostListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB4F286DE1B1001C3A37 /* PostListContract.swift */; };
+		FAA9AB57286DE1B1001C3A37 /* PostListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB50286DE1B1001C3A37 /* PostListInteractor.swift */; };
+		FAA9AB58286DE1B1001C3A37 /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB51286DE1B1001C3A37 /* PostListPresenter.swift */; };
+		FAA9AB5E286DE323001C3A37 /* ViperModuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB5C286DE323001C3A37 /* ViperModuleProtocol.swift */; };
+		FAA9AB5F286DE323001C3A37 /* ViperUIModuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB5D286DE323001C3A37 /* ViperUIModuleProtocol.swift */; };
+		FAA9AB64286DE59C001C3A37 /* AppDelegateContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB61286DE59C001C3A37 /* AppDelegateContract.swift */; };
+		FAA9AB65286DE59C001C3A37 /* AppDelegateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB62286DE59C001C3A37 /* AppDelegateInteractor.swift */; };
+		FAA9AB66286DE59C001C3A37 /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB63286DE59C001C3A37 /* AppDelegateRouter.swift */; };
+		FAA9AB6A286DF578001C3A37 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB68286DF578001C3A37 /* PostCell.swift */; };
+		FAA9AB6B286DF578001C3A37 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB69286DF578001C3A37 /* PostCell.xib */; };
+		FAA9AB6E286DF8D7001C3A37 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB6D286DF8D7001C3A37 /* Post.swift */; };
+		FAA9AB70286DF94D001C3A37 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB6F286DF94D001C3A37 /* Comment.swift */; };
+		FAA9AB73286DFDCD001C3A37 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB72286DFDCD001C3A37 /* PostService.swift */; };
+		FAA9AB75286DFDD7001C3A37 /* APIPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB74286DFDD7001C3A37 /* APIPostService.swift */; };
+		FAA9AB79286DFE8A001C3A37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB78286DFE8A001C3A37 /* Constants.swift */; };
+		FAA9AB85286E19C2001C3A37 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB7E286E19C2001C3A37 /* PostDetailView.swift */; };
+		FAA9AB86286E19C2001C3A37 /* PostDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB7F286E19C2001C3A37 /* PostDetailBuilder.swift */; };
+		FAA9AB87286E19C2001C3A37 /* PostDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB80286E19C2001C3A37 /* PostDetailRouter.swift */; };
+		FAA9AB88286E19C2001C3A37 /* PostDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB81286E19C2001C3A37 /* PostDetailView.xib */; };
+		FAA9AB89286E19C2001C3A37 /* PostDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB82286E19C2001C3A37 /* PostDetailContract.swift */; };
+		FAA9AB8A286E19C2001C3A37 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB83286E19C2001C3A37 /* PostDetailInteractor.swift */; };
+		FAA9AB8B286E19C2001C3A37 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB84286E19C2001C3A37 /* PostDetailPresenter.swift */; };
+		FAA9AB8F286E55B9001C3A37 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB8D286E55B9001C3A37 /* CommentCell.swift */; };
+		FAA9AB90286E55B9001C3A37 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB8E286E55B9001C3A37 /* CommentCell.xib */; };
+		FAA9AB93286E5776001C3A37 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB91286E5776001C3A37 /* DescriptionCell.swift */; };
+		FAA9AB94286E5776001C3A37 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB92286E5776001C3A37 /* DescriptionCell.xib */; };
+		FAA9AB97286E57E5001C3A37 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB95286E57E5001C3A37 /* UserCell.swift */; };
+		FAA9AB98286E57E5001C3A37 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB96286E57E5001C3A37 /* UserCell.xib */; };
+		FAA9AB9A286E59CB001C3A37 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB99286E59CB001C3A37 /* User.swift */; };
+		FAA9ABBA2870ACA5001C3A37 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9ABB92870ACA5001C3A37 /* CoreDataManager.swift */; };
+		FAA9ABBC2871BEA5001C3A37 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9ABBB2871BEA5001C3A37 /* CoreDataService.swift */; };
+		FAA9ABBE2871BEC2001C3A37 /* APICoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9ABBD2871BEC2001C3A37 /* APICoreDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +72,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D602B52255545DDF3B79A06 /* Pods-ZemogaTechTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaTechTest.debug.xcconfig"; path = "Target Support Files/Pods-ZemogaTechTest/Pods-ZemogaTechTest.debug.xcconfig"; sourceTree = "<group>"; };
+		215FD7469E16388A12E7AFAC /* Pods-ZemogaTechTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaTechTest.release.xcconfig"; path = "Target Support Files/Pods-ZemogaTechTest/Pods-ZemogaTechTest.release.xcconfig"; sourceTree = "<group>"; };
+		57D240690DE0540A16AAD8A0 /* Pods-ZemogaTechTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaTechTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZemogaTechTestTests/Pods-ZemogaTechTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		833F177A24932616CBE96A65 /* Pods_ZemogaTechTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZemogaTechTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6359AFB24AE63CB8B767CD /* Pods_ZemogaTechTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZemogaTechTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69096233596C6877CC21467 /* Pods-ZemogaTechTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZemogaTechTestTests.release.xcconfig"; path = "Target Support Files/Pods-ZemogaTechTestTests/Pods-ZemogaTechTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		FAA9AB13286DDDE5001C3A37 /* ZemogaTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZemogaTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9AB16286DDDE5001C3A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA9AB18286DDDE5001C3A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAA9AB1A286DDDE5001C3A37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAA9AB1D286DDDE5001C3A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAA9AB20286DDDE5001C3A37 /* ZemogaTechTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZemogaTechTest.xcdatamodel; sourceTree = "<group>"; };
 		FAA9AB22286DDDE7001C3A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA9AB25286DDDE7001C3A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +89,42 @@
 		FAA9AB36286DDDE8001C3A37 /* ZemogaTechTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZemogaTechTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA9AB3A286DDDE8001C3A37 /* ZemogaTechTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaTechTestUITests.swift; sourceTree = "<group>"; };
 		FAA9AB3C286DDDE8001C3A37 /* ZemogaTechTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaTechTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAA9AB4B286DE1B1001C3A37 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		FAA9AB4C286DE1B1001C3A37 /* PostListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListBuilder.swift; sourceTree = "<group>"; };
+		FAA9AB4D286DE1B1001C3A37 /* PostListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRouter.swift; sourceTree = "<group>"; };
+		FAA9AB4E286DE1B1001C3A37 /* PostListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListView.xib; sourceTree = "<group>"; };
+		FAA9AB4F286DE1B1001C3A37 /* PostListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListContract.swift; sourceTree = "<group>"; };
+		FAA9AB50286DE1B1001C3A37 /* PostListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListInteractor.swift; sourceTree = "<group>"; };
+		FAA9AB51286DE1B1001C3A37 /* PostListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
+		FAA9AB5C286DE323001C3A37 /* ViperModuleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleProtocol.swift; sourceTree = "<group>"; };
+		FAA9AB5D286DE323001C3A37 /* ViperUIModuleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperUIModuleProtocol.swift; sourceTree = "<group>"; };
+		FAA9AB61286DE59C001C3A37 /* AppDelegateContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateContract.swift; sourceTree = "<group>"; };
+		FAA9AB62286DE59C001C3A37 /* AppDelegateInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateInteractor.swift; sourceTree = "<group>"; };
+		FAA9AB63286DE59C001C3A37 /* AppDelegateRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
+		FAA9AB68286DF578001C3A37 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		FAA9AB69286DF578001C3A37 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		FAA9AB6D286DF8D7001C3A37 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FAA9AB6F286DF94D001C3A37 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FAA9AB72286DFDCD001C3A37 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		FAA9AB74286DFDD7001C3A37 /* APIPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPostService.swift; sourceTree = "<group>"; };
+		FAA9AB78286DFE8A001C3A37 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAA9AB7E286E19C2001C3A37 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		FAA9AB7F286E19C2001C3A37 /* PostDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailBuilder.swift; sourceTree = "<group>"; };
+		FAA9AB80286E19C2001C3A37 /* PostDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailRouter.swift; sourceTree = "<group>"; };
+		FAA9AB81286E19C2001C3A37 /* PostDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailView.xib; sourceTree = "<group>"; };
+		FAA9AB82286E19C2001C3A37 /* PostDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailContract.swift; sourceTree = "<group>"; };
+		FAA9AB83286E19C2001C3A37 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
+		FAA9AB84286E19C2001C3A37 /* PostDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		FAA9AB8D286E55B9001C3A37 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		FAA9AB8E286E55B9001C3A37 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		FAA9AB91286E5776001C3A37 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		FAA9AB92286E5776001C3A37 /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
+		FAA9AB95286E57E5001C3A37 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		FAA9AB96286E57E5001C3A37 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		FAA9AB99286E59CB001C3A37 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAA9ABB92870ACA5001C3A37 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FAA9ABBB2871BEA5001C3A37 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		FAA9ABBD2871BEC2001C3A37 /* APICoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICoreDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F5562502A36F166CDA08E9 /* Pods_ZemogaTechTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CCB3AA4FB3A26D87C1A0EBA /* Pods_ZemogaTechTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +154,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B3D3ACE3F9B6AE521040A93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D602B52255545DDF3B79A06 /* Pods-ZemogaTechTest.debug.xcconfig */,
+				215FD7469E16388A12E7AFAC /* Pods-ZemogaTechTest.release.xcconfig */,
+				57D240690DE0540A16AAD8A0 /* Pods-ZemogaTechTestTests.debug.xcconfig */,
+				E69096233596C6877CC21467 /* Pods-ZemogaTechTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		67F78B03D1E41F8A9A5B4472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				833F177A24932616CBE96A65 /* Pods_ZemogaTechTest.framework */,
+				9B6359AFB24AE63CB8B767CD /* Pods_ZemogaTechTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAA9AB0A286DDDE5001C3A37 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +181,8 @@
 				FAA9AB2F286DDDE8001C3A37 /* ZemogaTechTestTests */,
 				FAA9AB39286DDDE8001C3A37 /* ZemogaTechTestUITests */,
 				FAA9AB14286DDDE5001C3A37 /* Products */,
+				5B3D3ACE3F9B6AE521040A93 /* Pods */,
+				67F78B03D1E41F8A9A5B4472 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +199,13 @@
 		FAA9AB15286DDDE5001C3A37 /* ZemogaTechTest */ = {
 			isa = PBXGroup;
 			children = (
-				FAA9AB16286DDDE5001C3A37 /* AppDelegate.swift */,
-				FAA9AB18286DDDE5001C3A37 /* SceneDelegate.swift */,
-				FAA9AB1A286DDDE5001C3A37 /* ViewController.swift */,
-				FAA9AB1C286DDDE5001C3A37 /* Main.storyboard */,
-				FAA9AB22286DDDE7001C3A37 /* Assets.xcassets */,
-				FAA9AB24286DDDE7001C3A37 /* LaunchScreen.storyboard */,
 				FAA9AB27286DDDE7001C3A37 /* Info.plist */,
+				FAA9AB22286DDDE7001C3A37 /* Assets.xcassets */,
+				FAA9AB60286DE58A001C3A37 /* AppDelegate */,
+				FAA9AB71286DFDB2001C3A37 /* Services */,
+				FAA9AB6C286DF8B8001C3A37 /* Models */,
+				FAA9AB5A286DE298001C3A37 /* Modules */,
+				FAA9AB59286DE287001C3A37 /* Tools */,
 				FAA9AB1F286DDDE5001C3A37 /* ZemogaTechTest.xcdatamodeld */,
 			);
 			path = ZemogaTechTest;
@@ -130,6 +228,119 @@
 			path = ZemogaTechTestUITests;
 			sourceTree = "<group>";
 		};
+		FAA9AB49286DE142001C3A37 /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB67286DF48D001C3A37 /* Cell */,
+				FAA9AB4C286DE1B1001C3A37 /* PostListBuilder.swift */,
+				FAA9AB4F286DE1B1001C3A37 /* PostListContract.swift */,
+				FAA9AB50286DE1B1001C3A37 /* PostListInteractor.swift */,
+				FAA9AB51286DE1B1001C3A37 /* PostListPresenter.swift */,
+				FAA9AB4D286DE1B1001C3A37 /* PostListRouter.swift */,
+				FAA9AB4B286DE1B1001C3A37 /* PostListView.swift */,
+				FAA9AB4E286DE1B1001C3A37 /* PostListView.xib */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		FAA9AB4A286DE150001C3A37 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB8C286E55A9001C3A37 /* Cell */,
+				FAA9AB7F286E19C2001C3A37 /* PostDetailBuilder.swift */,
+				FAA9AB82286E19C2001C3A37 /* PostDetailContract.swift */,
+				FAA9AB83286E19C2001C3A37 /* PostDetailInteractor.swift */,
+				FAA9AB84286E19C2001C3A37 /* PostDetailPresenter.swift */,
+				FAA9AB80286E19C2001C3A37 /* PostDetailRouter.swift */,
+				FAA9AB7E286E19C2001C3A37 /* PostDetailView.swift */,
+				FAA9AB81286E19C2001C3A37 /* PostDetailView.xib */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		FAA9AB59286DE287001C3A37 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB5B286DE312001C3A37 /* Viper */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FAA9AB5A286DE298001C3A37 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB4A286DE150001C3A37 /* PostDetail */,
+				FAA9AB49286DE142001C3A37 /* PostList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FAA9AB5B286DE312001C3A37 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB5C286DE323001C3A37 /* ViperModuleProtocol.swift */,
+				FAA9AB5D286DE323001C3A37 /* ViperUIModuleProtocol.swift */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		FAA9AB60286DE58A001C3A37 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB24286DDDE7001C3A37 /* LaunchScreen.storyboard */,
+				FAA9AB16286DDDE5001C3A37 /* AppDelegate.swift */,
+				FAA9AB61286DE59C001C3A37 /* AppDelegateContract.swift */,
+				FAA9AB62286DE59C001C3A37 /* AppDelegateInteractor.swift */,
+				FAA9AB63286DE59C001C3A37 /* AppDelegateRouter.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FAA9AB67286DF48D001C3A37 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB68286DF578001C3A37 /* PostCell.swift */,
+				FAA9AB69286DF578001C3A37 /* PostCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FAA9AB6C286DF8B8001C3A37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB6D286DF8D7001C3A37 /* Post.swift */,
+				FAA9AB6F286DF94D001C3A37 /* Comment.swift */,
+				FAA9AB99286E59CB001C3A37 /* User.swift */,
+				FAA9ABB92870ACA5001C3A37 /* CoreDataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA9AB71286DFDB2001C3A37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB72286DFDCD001C3A37 /* PostService.swift */,
+				FAA9AB74286DFDD7001C3A37 /* APIPostService.swift */,
+				FAA9AB78286DFE8A001C3A37 /* Constants.swift */,
+				FAA9ABBB2871BEA5001C3A37 /* CoreDataService.swift */,
+				FAA9ABBD2871BEC2001C3A37 /* APICoreDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAA9AB8C286E55A9001C3A37 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB8D286E55B9001C3A37 /* CommentCell.swift */,
+				FAA9AB8E286E55B9001C3A37 /* CommentCell.xib */,
+				FAA9AB91286E5776001C3A37 /* DescriptionCell.swift */,
+				FAA9AB92286E5776001C3A37 /* DescriptionCell.xib */,
+				FAA9AB95286E57E5001C3A37 /* UserCell.swift */,
+				FAA9AB96286E57E5001C3A37 /* UserCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA9AB40286DDDE8001C3A37 /* Build configuration list for PBXNativeTarget "ZemogaTechTest" */;
 			buildPhases = (
+				0C05253569FADE8ED227A727 /* [CP] Check Pods Manifest.lock */,
 				FAA9AB0F286DDDE5001C3A37 /* Sources */,
 				FAA9AB10286DDDE5001C3A37 /* Frameworks */,
 				FAA9AB11286DDDE5001C3A37 /* Resources */,
+				9225FFC5715C1DF29E974832 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +367,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA9AB43286DDDE8001C3A37 /* Build configuration list for PBXNativeTarget "ZemogaTechTestTests" */;
 			buildPhases = (
+				0BD3A1CAAF87DB79EBCC4CBF /* [CP] Check Pods Manifest.lock */,
 				FAA9AB28286DDDE8001C3A37 /* Sources */,
 				FAA9AB29286DDDE8001C3A37 /* Frameworks */,
 				FAA9AB2A286DDDE8001C3A37 /* Resources */,
@@ -234,9 +448,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA9AB55286DE1B1001C3A37 /* PostListView.xib in Resources */,
 				FAA9AB26286DDDE7001C3A37 /* LaunchScreen.storyboard in Resources */,
 				FAA9AB23286DDDE7001C3A37 /* Assets.xcassets in Resources */,
-				FAA9AB1E286DDDE5001C3A37 /* Main.storyboard in Resources */,
+				FAA9AB90286E55B9001C3A37 /* CommentCell.xib in Resources */,
+				FAA9AB98286E57E5001C3A37 /* UserCell.xib in Resources */,
+				FAA9AB6B286DF578001C3A37 /* PostCell.xib in Resources */,
+				FAA9AB94286E5776001C3A37 /* DescriptionCell.xib in Resources */,
+				FAA9AB88286E19C2001C3A37 /* PostDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +475,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BD3A1CAAF87DB79EBCC4CBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZemogaTechTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C05253569FADE8ED227A727 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZemogaTechTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9225FFC5715C1DF29E974832 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZemogaTechTest/Pods-ZemogaTechTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZemogaTechTest/Pods-ZemogaTechTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZemogaTechTest/Pods-ZemogaTechTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAA9AB0F286DDDE5001C3A37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA9AB1B286DDDE5001C3A37 /* ViewController.swift in Sources */,
+				FAA9AB75286DFDD7001C3A37 /* APIPostService.swift in Sources */,
+				FAA9ABBE2871BEC2001C3A37 /* APICoreDataService.swift in Sources */,
+				FAA9AB57286DE1B1001C3A37 /* PostListInteractor.swift in Sources */,
+				FAA9AB89286E19C2001C3A37 /* PostDetailContract.swift in Sources */,
+				FAA9AB53286DE1B1001C3A37 /* PostListBuilder.swift in Sources */,
 				FAA9AB17286DDDE5001C3A37 /* AppDelegate.swift in Sources */,
+				FAA9AB65286DE59C001C3A37 /* AppDelegateInteractor.swift in Sources */,
 				FAA9AB21286DDDE5001C3A37 /* ZemogaTechTest.xcdatamodeld in Sources */,
-				FAA9AB19286DDDE5001C3A37 /* SceneDelegate.swift in Sources */,
+				FAA9AB8A286E19C2001C3A37 /* PostDetailInteractor.swift in Sources */,
+				FAA9AB9A286E59CB001C3A37 /* User.swift in Sources */,
+				FAA9AB93286E5776001C3A37 /* DescriptionCell.swift in Sources */,
+				FAA9AB52286DE1B1001C3A37 /* PostListView.swift in Sources */,
+				FAA9AB5F286DE323001C3A37 /* ViperUIModuleProtocol.swift in Sources */,
+				FAA9AB6A286DF578001C3A37 /* PostCell.swift in Sources */,
+				FAA9AB73286DFDCD001C3A37 /* PostService.swift in Sources */,
+				FAA9AB66286DE59C001C3A37 /* AppDelegateRouter.swift in Sources */,
+				FAA9AB6E286DF8D7001C3A37 /* Post.swift in Sources */,
+				FAA9AB8F286E55B9001C3A37 /* CommentCell.swift in Sources */,
+				FAA9AB97286E57E5001C3A37 /* UserCell.swift in Sources */,
+				FAA9ABBC2871BEA5001C3A37 /* CoreDataService.swift in Sources */,
+				FAA9ABBA2870ACA5001C3A37 /* CoreDataManager.swift in Sources */,
+				FAA9AB64286DE59C001C3A37 /* AppDelegateContract.swift in Sources */,
+				FAA9AB87286E19C2001C3A37 /* PostDetailRouter.swift in Sources */,
+				FAA9AB70286DF94D001C3A37 /* Comment.swift in Sources */,
+				FAA9AB79286DFE8A001C3A37 /* Constants.swift in Sources */,
+				FAA9AB54286DE1B1001C3A37 /* PostListRouter.swift in Sources */,
+				FAA9AB86286E19C2001C3A37 /* PostDetailBuilder.swift in Sources */,
+				FAA9AB56286DE1B1001C3A37 /* PostListContract.swift in Sources */,
+				FAA9AB8B286E19C2001C3A37 /* PostDetailPresenter.swift in Sources */,
+				FAA9AB85286E19C2001C3A37 /* PostDetailView.swift in Sources */,
+				FAA9AB5E286DE323001C3A37 /* ViperModuleProtocol.swift in Sources */,
+				FAA9AB58286DE1B1001C3A37 /* PostListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +612,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAA9AB1C286DDDE5001C3A37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAA9AB1D286DDDE5001C3A37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAA9AB24286DDDE7001C3A37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +739,7 @@
 		};
 		FAA9AB41286DDDE8001C3A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D602B52255545DDF3B79A06 /* Pods-ZemogaTechTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,7 +750,7 @@
 				INFOPLIST_FILE = ZemogaTechTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,6 +768,7 @@
 		};
 		FAA9AB42286DDDE8001C3A37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 215FD7469E16388A12E7AFAC /* Pods-ZemogaTechTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,7 +779,7 @@
 				INFOPLIST_FILE = ZemogaTechTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,6 +797,7 @@
 		};
 		FAA9AB44286DDDE8001C3A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D240690DE0540A16AAD8A0 /* Pods-ZemogaTechTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +818,7 @@
 		};
 		FAA9AB45286DDDE8001C3A37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69096233596C6877CC21467 /* Pods-ZemogaTechTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
