@@ -15,7 +15,7 @@ protocol PostDetailViewProtocol:ViperView{
     func hideLoading()
     func setNavBarStar(isFilled: Bool)
     func reload()
-    func alertVC(title: String?, message: String?, completion: (() -> ())?)
+    func alertVC(title: String?, message: String?)
     func alertVCWithOKBlock(title: String?, message: String?)
     func goBack()
 }
@@ -46,10 +46,10 @@ protocol PostDetailInteractorProtocol:ViperInteractor{
 }
 
 protocol PostDetailInteractorOutputProtocol:AnyObject{
-    func success(_ model: [Comment])
-    func success(_ model: [User])
+    func successComment(_ model: [Comment])
+    func successUser(_ model: [User])
     func successDelete()
-    func success(isFavorite: Bool)
+    func successFavorite(_ isFavorite: Bool)
     func error(_ message: String)
 }
 

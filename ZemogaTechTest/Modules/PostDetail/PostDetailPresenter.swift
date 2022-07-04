@@ -70,19 +70,19 @@ final class PostDetailPresenter:PostDetailPresenterProtocol{
 extension PostDetailPresenter:PostDetailInteractorOutputProtocol{
     
     // MARK: - Interactor's Responses
-    func success(_ model: [Comment]) {
+    func successComment(_ model: [Comment]) {
         guard let userId = selectedPost?.userId else {return}
         commentArray = model
         interactor.getUserInPost(userId: userId)
     }
     
-    func success(isFavorite: Bool){
+    func successFavorite(_ isFavorite: Bool){
         view.setNavBarStar(isFilled: isFavorite)
         let message = isFavorite ? "Post added to favorites." : "Post removed from favorites."
-        view.alertVC(title: "Success", message: message, completion: nil)
+        view.alertVC(title: "Success", message: message)
     }
     
-    func success(_ model: [User]) {
+    func successUser(_ model: [User]) {
         view.hideLoading()
         postUser = model[0]
         view.reload()
@@ -95,7 +95,7 @@ extension PostDetailPresenter:PostDetailInteractorOutputProtocol{
     
     func error(_ message: String) {
         view.hideLoading()
-        view.alertVC(title: "Error", message: message, completion: nil)
+        view.alertVC(title: "Error", message: message)
         return
     }
 }

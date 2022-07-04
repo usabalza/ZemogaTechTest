@@ -49,7 +49,6 @@
 		FAA9AB97286E57E5001C3A37 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB95286E57E5001C3A37 /* UserCell.swift */; };
 		FAA9AB98286E57E5001C3A37 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA9AB96286E57E5001C3A37 /* UserCell.xib */; };
 		FAA9AB9A286E59CB001C3A37 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9AB99286E59CB001C3A37 /* User.swift */; };
-		FAA9ABBA2870ACA5001C3A37 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9ABB92870ACA5001C3A37 /* CoreDataManager.swift */; };
 		FAA9ABBC2871BEA5001C3A37 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9ABBB2871BEA5001C3A37 /* CoreDataService.swift */; };
 		FAA9ABBE2871BEC2001C3A37 /* APICoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA9ABBD2871BEC2001C3A37 /* APICoreDataService.swift */; };
 /* End PBXBuildFile section */
@@ -122,7 +121,6 @@
 		FAA9AB95286E57E5001C3A37 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		FAA9AB96286E57E5001C3A37 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		FAA9AB99286E59CB001C3A37 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FAA9ABB92870ACA5001C3A37 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		FAA9ABBB2871BEA5001C3A37 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		FAA9ABBD2871BEC2001C3A37 /* APICoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICoreDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -311,7 +309,6 @@
 				FAA9AB6D286DF8D7001C3A37 /* Post.swift */,
 				FAA9AB6F286DF94D001C3A37 /* Comment.swift */,
 				FAA9AB99286E59CB001C3A37 /* User.swift */,
-				FAA9ABB92870ACA5001C3A37 /* CoreDataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,11 +316,9 @@
 		FAA9AB71286DFDB2001C3A37 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FAA9AB72286DFDCD001C3A37 /* PostService.swift */,
-				FAA9AB74286DFDD7001C3A37 /* APIPostService.swift */,
+				FAA9ABC02873757E001C3A37 /* CoreData */,
+				FAA9ABBF28737570001C3A37 /* Post */,
 				FAA9AB78286DFE8A001C3A37 /* Constants.swift */,
-				FAA9ABBB2871BEA5001C3A37 /* CoreDataService.swift */,
-				FAA9ABBD2871BEC2001C3A37 /* APICoreDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -339,6 +334,24 @@
 				FAA9AB96286E57E5001C3A37 /* UserCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FAA9ABBF28737570001C3A37 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9AB72286DFDCD001C3A37 /* PostService.swift */,
+				FAA9AB74286DFDD7001C3A37 /* APIPostService.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		FAA9ABC02873757E001C3A37 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9ABBB2871BEA5001C3A37 /* CoreDataService.swift */,
+				FAA9ABBD2871BEC2001C3A37 /* APICoreDataService.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -564,7 +577,6 @@
 				FAA9AB8F286E55B9001C3A37 /* CommentCell.swift in Sources */,
 				FAA9AB97286E57E5001C3A37 /* UserCell.swift in Sources */,
 				FAA9ABBC2871BEA5001C3A37 /* CoreDataService.swift in Sources */,
-				FAA9ABBA2870ACA5001C3A37 /* CoreDataManager.swift in Sources */,
 				FAA9AB64286DE59C001C3A37 /* AppDelegateContract.swift in Sources */,
 				FAA9AB87286E19C2001C3A37 /* PostDetailRouter.swift in Sources */,
 				FAA9AB70286DF94D001C3A37 /* Comment.swift in Sources */,

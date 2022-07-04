@@ -22,7 +22,7 @@ final class PostDetailInteractor:PostDetailInteractorProtocol{
             guard let self = self else {return}
             switch response{
             case let .success(model):
-                self.output.success(model)
+                self.output.successComment(model)
             case let .failure(error):
                 self.output.error(error)
             }
@@ -34,7 +34,7 @@ final class PostDetailInteractor:PostDetailInteractorProtocol{
             guard let self = self else {return}
             switch response{
             case let .success(model):
-                self.output.success(model)
+                self.output.successUser(model)
             case let .failure(error):
                 self.output.error(error)
             }
@@ -49,7 +49,7 @@ final class PostDetailInteractor:PostDetailInteractorProtocol{
             updatedPost.isFavorite = false
         }
         coreDataService.update(updatedPost, save: true)
-        output.success(isFavorite: updatedPost.isFavorite!)
+        output.successFavorite(updatedPost.isFavorite!)
     }
     
     func deletePost(postId: Int) {

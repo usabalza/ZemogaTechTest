@@ -63,7 +63,7 @@ final class PostListView: UIViewController{
     }
     
     @objc func refreshContent(){
-        presenter.loadContent()
+        presenter.loadFromAPI()
     }
     
     deinit {
@@ -79,7 +79,6 @@ final class PostListView: UIViewController{
             self.presenter.deleteAllPosts()
         }))
         self.present(alert, animated: true, completion: nil)
-        
         
     }
     
@@ -121,18 +120,21 @@ extension PostListView:PostListViewProtocol{
 }
 
 extension PostListView: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return presenter.hasCache() ? presenter.getCDPostCount() : presenter.getPostCount()
         return presenter.getPostCount()
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Number of posts: \(presenter.getPostCount())"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PostCell.identifier, for: indexPath) as! PostCell
-        /*if presenter.hasCache() == false{*/
-            cell.setupFromAPI(model: presenter.getPostIn(row: indexPath.row))
-        /*}else{
-            cell.setupFromCD(model: presenter.getCDPostIn(row: indexPath.row))
-        }*/
+        cell.setupFromAPI(model: presenter.getPostIn(row: indexPath.row))
         
         return cell
     }

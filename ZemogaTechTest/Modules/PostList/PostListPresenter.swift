@@ -17,38 +17,31 @@ final class PostListPresenter:PostListPresenterProtocol{
     
     var cachedTable = false
     var postArray: [Post] = []
-    //var cdPostArray: [CDPost] = []
-    //private let manager = CoreDataManager()
-    
     
     // - MARK: - View's Interactions
     func viewDidLoad(){
-        //view.showLoading()
-        /*cdPostArray = manager.fetchPosts()
-        if cdPostArray.count == 0{
-            print("Data empty. Populating...")
-            loadContent()
-        }else{
-            cachedTable = true
-            view.hideLoading()
-            print("Loading from cache CoreData")
-            view.reload()
-        }*/
-        
-        //loadContent()
         
     }
     
     func loadContent(){
         view.showLoading()
         if interactor.checkIfCDIsEmpty() == 0{
-            print("Loaded from API")
             interactor.getAllPosts()
         }else{
-            print("Loaded from CoreData")
             interactor.getAllCDPosts()
         }
-        
+    }
+    
+    func loadFromAPI(){
+        view.showLoading()
+        print("Loading from API")
+        interactor.reloadFromAPI()
+    }
+    
+    func loadFromCoreData(){
+        view.showLoading()
+        print("Loading from CoreData")
+        interactor.getAllCDPosts()
     }
     
     func goToPostDetail(row: Int) {
@@ -59,17 +52,9 @@ final class PostListPresenter:PostListPresenterProtocol{
         return postArray.count
     }
     
-    /*func getCDPostCount() -> Int{
-        return cdPostArray.count
-    }*/
-    
     func getPostIn(row: Int) -> Post {
         return postArray[row]
     }
-    
-    /*func getCDPostIn(row: Int) -> CDPost {
-        return cdPostArray[row]
-    }*/
     
     func hasCache() -> Bool {
         return cachedTable
@@ -79,15 +64,8 @@ final class PostListPresenter:PostListPresenterProtocol{
         interactor.deleteAllPosts()
     }
     
-    
-    
     func selectTableMode(mode: Int) {
         interactor.filterFavoritePosts(mode: mode)
-    }
-    
-    func loadFromCoreData() {
-        //cdPostArray = manager.fetchPosts()
-        view.reload()
     }
     
     deinit {
@@ -98,14 +76,15 @@ final class PostListPresenter:PostListPresenterProtocol{
 extension PostListPresenter:PostListInteractorOutputProtocol{
     // MARK: - Interactor's Responses
     
-    func success(_ model: [Post]) {
+    func successFetch(_ model: [Post]) {
         postArray = model
-        if interactor.checkIfCDIsEmpty() == 0{
+        if interactor.checkIfCDIsEmpty() != postArray.count{
             interactor.uploadAllPosts(posts: postArray)
         }
         print("\(model.count) entries loaded.")
         self.view.hideLoading()
         self.view.reload()
+        
     }
     
     func successDelete() {
@@ -114,8 +93,9 @@ extension PostListPresenter:PostListInteractorOutputProtocol{
         view.alertVC(title: "Data deleted", message: "All posts was deleted successfully.")
     }
     
-    func success() {
+    func successCD() {
         print("Uploaded to CD")
+        view.hideLoading()
         view.reload()
     }
     

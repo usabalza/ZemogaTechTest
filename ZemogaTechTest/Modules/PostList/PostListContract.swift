@@ -24,12 +24,11 @@ protocol PostListPresenterProtocol:ViperPresenter{
 
     func viewDidLoad()
     func loadFromCoreData()
+    func loadFromAPI()
     func hasCache() -> Bool
     func loadContent()
     func getPostCount() -> Int
     func getPostIn(row: Int) -> Post
-    //func getCDPostCount() -> Int
-    //func getCDPostIn(row: Int) -> CDPost
     func goToPostDetail(row: Int)
     func selectTableMode(mode: Int)
     func deleteAllPosts()
@@ -39,6 +38,7 @@ protocol PostListInteractorProtocol:ViperInteractor{
     var output: PostListInteractorOutputProtocol!{get set}
     func getAllPosts()
     func getAllCDPosts()
+    func reloadFromAPI()
     func uploadAllPosts(posts: [Post])
     func filterFavoritePosts(mode: Int)
     func checkIfCDIsEmpty() -> Int
@@ -46,9 +46,8 @@ protocol PostListInteractorProtocol:ViperInteractor{
 }
 
 protocol PostListInteractorOutputProtocol:AnyObject{
-    func success(_ model: [Post])
-    //func successCD(_ model: [Post])
-    func success()
+    func successFetch(_ model: [Post])
+    func successCD()
     func successDelete()
     func error(_ message: String)
 }
