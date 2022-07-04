@@ -55,8 +55,6 @@ final class PostDetailPresenter:PostDetailPresenterProtocol{
     func addToFavorites() {
         guard let post = selectedPost else {return}
         interactor.addToFavorites(post: post)
-        /*guard let id = postId else {return}
-        view.setNavBarStar(isFilled: manager.addFavorite(id: id))*/
     }
     
     func deletePost() {
