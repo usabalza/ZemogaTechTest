@@ -8,7 +8,6 @@ target 'ZemogaTechTest' do
   # Pods for ZemogaTechTest
 
   pod 'Alamofire', '~> 5.2'
-  pod 'IQKeyboardManager'
 
   target 'ZemogaTechTestTests' do
     inherit! :search_paths

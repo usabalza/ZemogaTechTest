@@ -112,12 +112,7 @@ protocol ViperPresenter:AnyObject{
 protocol ViperView:AnyObject{
     init()
     func set(_ presenter:ViperPresenter)
-    func showAlert(title: String?, message: String?,style: UIAlertController.Style, buttons: [(title:String,style: UIAlertAction.Style,action:(()->())?)], then: (()->())?)
-}
-extension ViperView{
-    func showAlert(title: String?, message: String?,style: UIAlertController.Style = .alert, buttons: [(title:String,style: UIAlertAction.Style,action:(()->())?)] = [], then: (()->())?){
-        showAlert(title: title, message: message,style: style, buttons: buttons, then: then)
-    }
+    
 }
 
 protocol ViperRouter:AnyObject{
